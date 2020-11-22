@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - run: bash install_ddev.sh
-      - run: pushd junk2 || ( docker cp nginx.tmpl ddev-router:/app && ddev start )
+#      - run: bash install_ddev.sh
+#      - run: pushd junk2 || ( docker cp nginx.tmpl ddev-router:/app && ddev start )
 #      - uses: mxschmitt/action-tmate@v3
       - uses: rfay/github-action-setup-ddev@20e159dfb0032c14cdcac9a4f25c69b472c8df47
+      - run: ddev list
