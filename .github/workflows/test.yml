@@ -8,5 +8,5 @@ jobs:
       - run: bash install_ddev.sh
       - run: pushd junk2 && ( ddev start || true )
       - uses: mxschmitt/action-tmate@v3
-      - uses: rfay/github-action-setup-ddev@5ad1dbf63b6381114a24b1754f2f5f675dbda704
+      - uses: rfay/github-action-setup-ddev@v1
       - run: ddev start || true
