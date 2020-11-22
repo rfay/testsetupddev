@@ -8,4 +8,4 @@ jobs:
       - run: bash install_ddev.sh
       - run: pushd junk2 || ( docker cp nginx.tmpl ddev-router:/app && ddev start )
 #      - uses: mxschmitt/action-tmate@v3
-      - uses: rfay/github-action-setup-ddev@9529c89a30ebaf35bf687bd30ddb29708d235eba
+      - uses: rfay/github-action-setup-ddev@20e159dfb0032c14cdcac9a4f25c69b472c8df47
