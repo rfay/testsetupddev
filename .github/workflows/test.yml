@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
+      - run: bash install_ddev.sh
+      - run: pushd junk2 && ( ddev start || true )
       - uses: mxschmitt/action-tmate@v3
       - uses: rfay/github-action-setup-ddev@v1
       - run: ddev start || true

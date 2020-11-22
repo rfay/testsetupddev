@@ -1,4 +1,5 @@
 name: junk
+omit_containers: [dba, ddev-ssh-agent]
 type: php
 docroot: ""
 php_version: "7.3"
